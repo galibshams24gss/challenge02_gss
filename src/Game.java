@@ -10,13 +10,13 @@ public class Game {
 
 	        System.out.println(" << Welcome to Monty Hall Problem Game Show >> " + "\n");
 	        System.out.print("STAY With Your Door Choice? [y/n]");
-	        char pd = kb.nextLine().toLowerCase().charAt(0);
-	        if(pd == 'y'){ //player wants to stay with his/her decision
+	        char playerDecision = kb.nextLine().toLowerCase().charAt(0);
+	        if(playerDecision == 'y'){ //player wants to stay with his/her decision
 	        	System.out.println("\n" + "Player wants to STAY with his/her Decision.");
 	        	for (int i = 1; i <= playerAttempts; i++) {
-	            int prizeDoor = randomGenerator.nextInt(3);
+	            int carDoor = randomGenerator.nextInt(3);
 	            int chosenDoor = randomGenerator.nextInt(3);
-	            if(chosenDoor == prizeDoor){
+	            if(chosenDoor == carDoor){
 	            	playerAchievements++; //achievements increase           
 	            }
 	        }
