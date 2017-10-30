@@ -28,7 +28,7 @@ public class Game {
 	    	  for (int i = 1; i <= playerAttempts; i++) {
 	          int carDoor = randomGenerator.nextInt(3);
 	          int chosenDoor = randomGenerator.nextInt(3);
-	          int goatDoor = carDoor; //put carDoor value into goatDoor
+	          int goatDoor = carDoor; //assign carDoor value into goatDoor
 	          while(goatDoor == carDoor || goatDoor == chosenDoor){
 	        	  goatDoor = randomGenerator.nextInt(3);
 	          }
